@@ -1,0 +1,239 @@
+body{
+	/*background-image es para poner una imagen de fondo*/
+	background-image:url("../IMAGENES/FONDO.jpg");
+	/*font-family es para la tipologia de letra*/
+	font-family:fuente-Browncake;
+	/*font-size es para el tamaño de letra en pixeles*/
+	font-size:50px;
+	/*color es para el color de las letras*/
+	color:#CCD1D1;
+	/*text-align es para aliniear las letras*/
+	text-align:center;
+	/*es para poner las letras en negritas*/
+	font-weight:bold;
+}
+hr{
+	/*borde es para la linea, grosor en pixeles, tipo de linea, color*/
+	border:4px solid #CCD1D1;
+	/*width es para el ancho de la linea en %*/
+	width:80%;
+	/**/
+	border-radius:5px;
+}
+p{
+	font-size:30px;
+	text-align:center;
+	line-height:1.5;
+	letter-spacing:2px;
+}
+table,tr,td{
+	border:1px solid #CCD1D1;
+	border-spacing:0px;
+	background-color:#C82058;
+	text-align:center;
+	font-size:20px;
+}
+/*clases*/
+.pie{
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+	/*background-color:#DA9CC7*/
+	background-image:linear-gradient(#B9283B,#C63E5D);
+	/*background-image:radial-gradient(#B9283B,#C63E5D);*/
+	/*background-image:url("../IMAGENES/FONDO.jpg");*/
+}
+.sup{
+	text-align:center;
+	font-weight:bold;
+	height:75px;
+	/*background-color:#DA9CC7*/
+	background-image:linear-gradient(#B9283B,#C63E5D);
+	/*background-image:radial-gradient(#B9283B,#C63E5D);*/
+	/*background-image:url("../IMAGENES/FONDO.jpg");*/
+	font-family:fuente-cake;
+	font-size:60px;
+}
+.titulo{
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+}
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller>a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows> a > i{
+	color:white;
+}
+/*cajas para productos*/
+.caja{
+	height:300px;
+	width:250;
+	background:#C82058;
+	border: 5px solid #CCD1D1;
+	margin:5px;
+	color:#CCD1D1;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 0 10px #CCD1D1;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.caja-2{
+	height:100px;
+	width:600px;
+	background:#C82058;
+	border:5px solid #CCD1D1;
+	margin:5px;
+	color:#CCD1D1;
+	text-align:center;
+	display:inline-block;
+	font-size:20px;
+}
+.caja-3{
+
+	background:#C82058;
+	border:5px solid #CCD1D1;
+	margin:5px;
+	color:#CCD1D1;
+	text-align:center;
+	display:inline-flex;
+	font-size:20px;
+}
+.caja-4{
+	flex:1;
+	background:#C82058;
+	border:5px solid #CCD1D1;
+	margin:5px;
+	color:#CCD1D1;
+	text-align:center;
+	font-size:20px;
+	display:block;
+}
+.caja-5{
+	flex:1;
+	background:#C82058;
+	border:5px solid #CCD1D1;
+	margin:5px;
+	color:#CCD1D1;
+	text-align:center;
+	font-size:20px;
+	display:block;
+}
+/**/
+.navegacion{
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#CCD1D1;
+	font-weight:bold;
+	font-size:15px;
+	display:flex;
+	transition:flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+	font-size:20px;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#C82058;
+}
+.navegacion-item:nth-child(2){
+	background:#C82058;
+}
+.navegacion-item:nth-child(3){
+	background:#C82058;
+}
+.navegacion-item:nth-child(4){
+	background:#C82058;
+}
+/*fuentes y tipologias*/
+@font-face{
+	font-family:fuente-Cake;
+	src:url(../fuentes/Cakecafe.otf);
+}
+@font-face{
+	font-family:fuente-Browncake;
+	src:url(../fuentes/Browncake.ttf);
+}
+@font-face{
+	font-family:fuente-Honey;
+	src:url(../fuentes/Honey Cake.otf);
+}
+
+
+
+
+
+
+
